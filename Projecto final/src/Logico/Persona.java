@@ -1,18 +1,16 @@
 package Logico;
 
-import java.util.ArrayList;
-
 
 public class Persona {
 	
-	private String cedula;
-	private String nombre;
-	private String direccion;
-	private String telefono;
-	private ArrayList<Persona> miHistorial;
+	protected String cedula;
+	protected String nombre;
+	protected String direccion;
+	protected String telefono;
+
 
 	
-	public Persona (String cedula, String nombre, String direccion, String telefono,ArrayList<Persona> miHistorial) {
+	public Persona (String cedula, String nombre, String direccion, String telefono) {
 		this.cedula = cedula;
 		this.nombre = nombre;
 		this.direccion = direccion;
@@ -52,13 +50,5 @@ public class Persona {
 		this.telefono = telefono;
 	}
 
-	public ArrayList<Persona> getMiHistorial() {
-		return miHistorial;
-	}
-	public void setMiHistorial(ArrayList<Persona> miHistorial) {
-		this.miHistorial = miHistorial;
-	}
-
-
-
+	
 }
